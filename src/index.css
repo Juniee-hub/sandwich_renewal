@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@font-face {
+    font-family: "notoR";
+    src: local('notoR'), url("/public/fonts/noto-sans-kr-v12-latin_korean-regular.eot");
+    src: local('notoR'), url("/public/fonts/noto-sans-kr-v12-latin_korean-regular.eot?#iefix") format('embedded-opentype');
+    src: local('notoR'), url("/public/fonts/noto-sans-kr-v12-latin_korean-regular.woff") format('woff');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: "notoM";
+    src: local('notoM'), url("/public/fonts/noto-sans-kr-v12-latin_korean-500.eot");
+    src: local('notoM'), url("/public/fonts/noto-sans-kr-v12-latin_korean-500.eot?#iefix") format('embedded-opentype');
+    src: local('notoM'), url("/public/fonts/noto-sans-kr-v12-latin_korean-500.woff") format('woff');
 }
+
+@font-face {
+    font-family: "notoB";
+    src: local('notoM'), url("/public/fonts/noto-sans-kr-v12-latin_korean-700.eot");
+    src: local('notoM'), url("/public/fonts/noto-sans-kr-v12-latin_korean-700.eot?#iefix") format('embedded-opentype');
+    src: local('notoM'), url("/public/fonts/noto-sans-kr-v12-latin_korean-700.woff") format('woff');
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    color: #36353A;
+    font-family: "notoR", 'serif';
+}
+
+menu,
+ol,
+ul {
+    list-style: none;
+}
+ul {
+    padding-inline-start: 0;
+}
+
+
+
+
+

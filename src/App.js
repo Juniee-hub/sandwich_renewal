@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './index.css'
+import 'antd/dist/antd.css';
+import Main          from './pages/main'
+import { authStore } from './states/auth'
+import Notfound      from './pages/notfound'
+import Auth          from './pages/auth'
+
+function App () {
+
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Main/>}/>
+                <Route path="/login" element={<Auth/>}/>
+                <Route path="/register" element={<Auth/>}/>
+
+
+                <Route path="*" element={<Notfound/>}/>
+
+            </Routes>
+        </BrowserRouter>
+    )
 }
 
-export default App;
+export default App

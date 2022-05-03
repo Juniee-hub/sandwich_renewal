@@ -1,0 +1,58 @@
+.line{
+    background: #d3d8e0;
+    height: 1px;
+    margin-top: 60px;
+    width: 100%
+}
+.line span{
+    background: #fff;
+    color: #ababac;
+    font-size: 14px;
+    left: 50%;
+    margin-top: -15px;
+    padding: 5px 10px;
+    position: absolute;
+    transform: translate(-50%);
+}
+
+.loginBtn{
+    border-radius: 6px;
+    font-family: 'notoM', 'serif';
+    font-size: 16px;
+    height: 50px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+.btnWrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btnWrap span {
+    line-height: 14px;
+}
+
+.findPW{
+    color: #ababac;
+    margin-right: 25px;
+}
+.register{
+    font-family: 'notoM', 'serif';
+    font-weight: bold;
+}
+
+.snsLoginWrap{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    width: 100%;
+}
+
+.snsLoginWrap > div{
+    width: 100%;
+}

@@ -1,0 +1,20 @@
+.kakao{
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    font-size: 12px;
+    height: 42px;
+    justify-content: center;
+
+    background-color: #ffe400;
+    color: #3f1c1d;
+    width: 100%;
+}
+.ic_kakao{
+    background: url(/public/icons/kakao.svg) no-repeat;
+    display: block;
+    margin-right: 6px;
+    height: 33px;
+    width: 33px;
+}

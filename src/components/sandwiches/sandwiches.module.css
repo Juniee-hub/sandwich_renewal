@@ -1,0 +1,158 @@
+.Wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.tabWrap{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+.tabWrap > div{
+    color: #d3d8e0;
+    cursor: pointer;
+    font-family: 'notoB', 'serif';
+    font-size: 20px;
+    margin: 0 20px;
+    text-align: center;
+    width: 130px;
+    word-break: keep-all;
+}
+
+.tabWrap span.active{
+    color: #36353a;
+}
+.tabWrap span.active + .bar{
+    background: #36353a;
+    height: 3px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.cardWrap{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap:28px
+}
+.cardWrap > div{
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    color: #333;
+    align-items: center;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    justify-content: flex-end;
+    padding: 0!important;
+    width: 195px;
+}
+.cardWrap .add{
+    background: #f6f6f9;
+    box-shadow: none!important;
+    cursor: pointer;
+}
+.cardWrap .add .bottom{
+    font-family: 'notoB', 'serif';
+    font-size: 14px;
+}
+.cardWrap .bottom{
+    border-top: 1px solid #f0f0f0;
+    align-items: center;
+    color: #ababac;
+    display: flex;
+    flex-direction: column;
+    height: 72px;
+    justify-content: center;
+    width: 100%;
+}
+
+.cardWrap .bottom .sub{
+    color: #ababac;
+    font-size: 14px;
+}
+.cardWrap .bottom .main{
+    color: #36353a;
+    font-family: 'notoB', 'serif';
+    font-size: 16px;
+}
+
+.cardWrap .header{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+}
+.cardWrap .header .plan{
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'notoB', 'serif';
+    font-size: 11px;
+    height: 17px;
+    margin-top: -4px;
+    text-align: center;
+    width: 57px;
+}
+.cardWrap .header .free{
+    background: #72d355;
+    display: none;
+}
+
+.cardWrap .body{
+    display: flex;
+    height: 110px;
+    justify-content: center;
+    width: 100%;
+}
+.cardWrap .body .logoWrap{
+    align-items: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.cardWrap .body .logoImg{
+    background-position: 50%;
+    height: 80px;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    width: 80px;
+}
+.cardWrap .body .logo{
+    align-items: center;
+    background-color: #d3d8e0;
+    border-radius: 6px;
+    color: #fff;
+    display: flex;
+    font-size: 40px;
+    height: 80px;
+    justify-content: center;
+    width: 80px;
+}
+
+.ic_plus{
+    height: 45px;
+    margin-bottom: 30px;
+    width: 45px;
+    background: url(/public/icons/plus.svg) no-repeat;
+}
+.ic_3dot{
+    background-size: 80%;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    margin-top: -10px;
+    width: 20px;
+    background: url(/public/icons/3dot.svg) no-repeat 50%;
+}
