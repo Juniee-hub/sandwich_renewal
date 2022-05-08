@@ -54,7 +54,7 @@ const Login = () => {
             </div>
             <div className={styles.snsLoginWrap}>
                 <KakaoLogin onLogin={handleLogin} text="Kakao <b>로그인</b>" />
-                <GoogleLogin onLogin={handleLogin} text="Google <b>로그인</b>" />
+                {/*<GoogleLogin onLogin={handleLogin} text="Google <b>로그인</b>" />*/}
             </div>
         </>
     )

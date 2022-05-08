@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ReactGoogleLogin    from 'react-google-login';
+// import ReactGoogleLogin    from 'react-google-login';
 import { Alert, Spin } from 'antd';
 
 import { LoadingOutlined } from '@ant-design/icons';
@@ -29,19 +29,19 @@ const GoogleLogin = ({text}) => {
                     style={{ marginTop: 20 }}
                 />
             }
-            <ReactGoogleLogin
-                autoLoad={false}
-                clientId={token}
-                onSuccess={GoogleResponse}
-                onFailure={console.error}
-                render={renderProps => (
-                    <Spin spinning={isPending} indicator={antIcon}>
-                        <div className={styles.google} onClick={renderProps.onClick} disabled={renderProps.disabled}>
-                            <span className={styles.ic_google} /><span dangerouslySetInnerHTML={{ __html: text }} />
-                        </div>
-                    </Spin>
-                )}
-            />
+            {/*<ReactGoogleLogin*/}
+            {/*    autoLoad={false}*/}
+            {/*    clientId={token}*/}
+            {/*    onSuccess={GoogleResponse}*/}
+            {/*    onFailure={console.error}*/}
+            {/*    render={renderProps => (*/}
+            {/*        <Spin spinning={isPending} indicator={antIcon}>*/}
+            {/*            <div className={styles.google} onClick={renderProps.onClick} disabled={renderProps.disabled}>*/}
+            {/*                <span className={styles.ic_google} /><span dangerouslySetInnerHTML={{ __html: text }} />*/}
+            {/*            </div>*/}
+            {/*        </Spin>*/}
+            {/*    )}*/}
+            {/*/>*/}
         </>
 
     )
