@@ -2,7 +2,8 @@ import React, { useEffect, useState }            from 'react'
 import { Form, Input, Button, Checkbox, Drawer } from 'antd'
 import { UserOutlined, LockOutlined }            from '@ant-design/icons'
 import { NavLink }                               from 'react-router-dom'
-import { v4 as uuid4 }                           from 'uuid'
+
+import { nanoid } from 'nanoid'
 
 import styles from './join.module.css'
 
@@ -107,9 +108,9 @@ const Join = () => {
                         <div>
                             <Checkbox/>
                             {[
-                                <a onClick={() => {setVisibleTerms(true)}} key={uuid4()}><span className="btnAtag">서비스 이용약관 </span></a>,
+                                <a onClick={() => {setVisibleTerms(true)}} key={nanoid()}><span className="btnAtag">서비스 이용약관 </span></a>,
                                 ', ',
-                                <a onClick={() => {setVisiblePrivacy(true)}} key={uuid4()}><span className="btnAtag">개인정보 취급방침</span></a>
+                                <a onClick={() => {setVisiblePrivacy(true)}} key={nanoid()}><span className="btnAtag">개인정보 취급방침</span></a>
                             ]}
                         </div>
                         <div className="span">을 확인하였고, 이에 동의합니다.</div>

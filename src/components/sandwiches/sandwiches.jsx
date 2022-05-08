@@ -1,6 +1,6 @@
 import React, { useEffect, useState }           from 'react'
 import { Menu, Dropdown, Button, Space, Badge } from 'antd'
-import { v4 as uuid4 }                          from 'uuid'
+import {nanoid}                                 from 'nanoid'
 
 import styles            from './sandwiches.module.css'
 import { Link, NavLink } from 'react-router-dom'
@@ -60,11 +60,11 @@ const Sandwiches = () => {
                 {
                     tabLists.map(tabItem =>
                         <div>
-                        <span key={uuid4()} onClick={() => handleTap(`${tabItem.state}`)}
+                        <span key={nanoid()} onClick={() => handleTap(`${tabItem.state}`)}
                               className={tab === `${tabItem.state}` && `${styles.active}`}>
                             {tabItem.name}
                         </span>
-                            <div key={uuid4()} className={styles.bar}></div>
+                            <div key={nanoid()} className={styles.bar}></div>
                         </div>
                     )
                 }
@@ -85,7 +85,7 @@ const Sandwiches = () => {
 
                         <Dropdown overlay={
                             <Menu>
-                                <Menu.Item key={uuid4()}>
+                                <Menu.Item key={nanoid()}>
                                     <Link to={`/`}>샌드위치 설정</Link>
                                 </Menu.Item>
                             </Menu>
