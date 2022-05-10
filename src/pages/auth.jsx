@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
-import { authStore }                from '../states/auth'
-import Join                         from '../components/auth/join'
+import { authStore } from '../stores/auth'
+import Join          from '../components/auth/join'
 import Login                        from '../components/auth/login'
 import { useLocation, useNavigate } from 'react-router-dom'
 import Footer                       from '../components/footer/footer'

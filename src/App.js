@@ -1,11 +1,13 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 
 import './index.css'
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.css'
+
+import { authStore } from './stores/auth'
 import Main          from './pages/main'
-import { authStore } from './states/auth'
 import Notfound      from './pages/notfound'
 import Auth          from './pages/auth'
+import Sandwich      from './pages/sandwich'
 
 function App () {
 
@@ -15,6 +17,7 @@ function App () {
                 <Route path="/" element={<Main/>}/>
                 <Route path="/login" element={<Auth/>}/>
                 <Route path="/register" element={<Auth/>}/>
+                <Route path="/sandwich/:channel" element={<Sandwich/>} />
 
 
                 <Route path="*" element={<Notfound/>}/>

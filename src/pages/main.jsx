@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useNavigate }      from 'react-router-dom'
 
-import { authStore } from '../states/auth'
+import { authStore } from '../stores/auth'
 import Header        from '../components/header/header'
 import Footer        from '../components/footer/footer'
 import Sandwiches from '../components/sandwiches/sandwiches'

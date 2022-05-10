@@ -1,6 +1,7 @@
 import React, { useEffect, useState }           from 'react'
 import { Menu, Dropdown, Button, Space, Badge } from 'antd'
-import {nanoid}                                 from 'nanoid'
+import { nanoid }                               from 'nanoid'
+import classNames                               from 'classnames'
 
 import styles            from './sandwiches.module.css'
 import { Link, NavLink } from 'react-router-dom'
@@ -26,45 +27,18 @@ const Sandwiches = () => {
     }
 
     // ToDo 소스 정리하기
-    const dropMenu = (
-        <Menu
-            items={[
-                {
-                    label: (
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-                            1st menu item
-                        </a>
-                    ),
-                },
-                {
-                    label: (
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-                            2nd menu item
-                        </a>
-                    ),
-                },
-                {
-                    label: (
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-                            3rd menu item
-                        </a>
-                    ),
-                },
-            ]}
-        />
-    )
 
     return (
         <div className={styles.Wrap}>
             <div className={styles.tabWrap}>
                 {
                     tabLists.map(tabItem =>
-                        <div>
-                        <span key={nanoid()} onClick={() => handleTap(`${tabItem.state}`)}
-                              className={tab === `${tabItem.state}` && `${styles.active}`}>
+                        <div key={nanoid()}>
+                        <span onClick={() => handleTap(`${tabItem.state}`)}
+                              className={classNames(null, tab === `${tabItem.state}` && `${styles.active}` )}>
                             {tabItem.name}
                         </span>
-                            <div key={nanoid()} className={styles.bar}></div>
+                            <div className={styles.bar}></div>
                         </div>
                     )
                 }
@@ -86,7 +60,7 @@ const Sandwiches = () => {
                         <Dropdown overlay={
                             <Menu>
                                 <Menu.Item key={nanoid()}>
-                                    <Link to={`/`}>샌드위치 설정</Link>
+                                    <NavLink to={`/`}>샌드위치 설정</NavLink>
                                 </Menu.Item>
                             </Menu>
                         }>
@@ -95,19 +69,21 @@ const Sandwiches = () => {
 
                     </div>
 
-                    <div className={styles.body}>
-                        <Badge count={'10'} offset={[0, 0]}>
-                            <div className={styles.logoWrap}>
-                                <div className={styles.logo}>샌</div>
-                            </div>
-                        </Badge>
-                    </div>
+                    <NavLink to={`/sandwich/48`}>
+                        <div className={styles.body}>
+                            <Badge count={'10'} offset={[0, 0]}>
+                                <div className={styles.logoWrap}>
+                                    <div className={styles.logo}>샌</div>
+                                </div>
+                            </Badge>
+                        </div>
 
 
-                    <div className={styles.bottom}>
-                        <span className={styles.main}>샌드위치 개선사항</span>
-                        <span className={styles.sub}>김준성</span>
-                    </div>
+                        <div className={styles.bottom}>
+                            <span className={styles.main}>샌드위치 개선사항</span>
+                            <span className={styles.sub}>김준성</span>
+                        </div>
+                    </NavLink>
 
                 </div>
 
@@ -116,17 +92,19 @@ const Sandwiches = () => {
                     <div className={styles.header}>
                     </div>
 
-                    <div className={styles.body}>
-                        <Badge count={100} offset={[0,0]}>
-                            <div className={styles.logoWrap}>
-                                <img className={styles.logoImg} src="https://sandwich.so/api/v1/storage/thumb/347" alt="Sandwich ThumbNail"/>
-                            </div>
-                        </Badge>
-                    </div>
-                    <div className={styles.bottom}>
-                        <span className={styles.main}>MX사업부</span>
-                        <span className={styles.sub}>정선희</span>
-                    </div>
+                    <NavLink to={`/sandwich/8`}>
+                        <div className={styles.body}>
+                            <Badge count={100} offset={[0, 0]}>
+                                <div className={styles.logoWrap}>
+                                    <img className={styles.logoImg} src="https://sandwich.so/api/v1/storage/thumb/347" alt="Sandwich ThumbNail"/>
+                                </div>
+                            </Badge>
+                        </div>
+                        <div className={styles.bottom}>
+                            <span className={styles.main}>MX사업부</span>
+                            <span className={styles.sub}>정선희</span>
+                        </div>
+                    </NavLink>
 
                 </div>
 
