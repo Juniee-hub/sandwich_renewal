@@ -1,0 +1,138 @@
+.ul{
+    width: 100%;
+    margin-top: 10px;
+}
+.ul li{
+    cursor: pointer;
+    overflow: hidden;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    white-space: nowrap;
+    z-index: 10;
+}
+.ul li span{
+    font-size: 16px;
+    align-items: center;
+    color: #36353a;
+    display: flex;
+    font-family: 'notoM','serif';
+    line-height: 21px;
+}
+
+.ul li a.active span,
+.ul li a.active
+{
+    color: #1890ff;
+}
+
+
+.section{
+    border-radius: 3px;
+    margin: auto;
+    width: calc(100% - 15px);
+}
+.section span{
+    display: flex;
+    padding: 4px 0 4px 27px;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.section .empty{
+    color: #ababac;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.project{
+
+}
+
+.project_title{
+    align-items: center;
+    display: flex;
+    height: 37px;
+    /*padding-left: 20px;*/
+    justify-content: space-between;
+}
+
+.addProject{
+    background: url(/public/icons/leftMenu/add_project.svg) no-repeat;
+    cursor: pointer;
+    height: 12px;
+    margin: 6px;
+    position: relative;
+    right: -13px;
+    /*top: 7px;*/
+    transform: scale(1.15);
+    width: 12px;
+}
+
+.projectItem{
+    border-radius: 3px;
+    margin: auto;
+    width: calc(100% - 15px);
+}
+.projectItem span{
+    display: flex;
+    padding: 4px 0 4px 10px;
+    white-space: normal;
+    word-break: break-word;
+    font-size: 13px !important;
+    justify-content: space-between;
+}
+
+.badge_s{
+    all:unset;
+    align-items: center;
+    background-color: #1890ff;
+    border-radius: 18px;
+    color: #fff !important;
+    display: flex;
+    height: 18px;
+    justify-content: center;
+    left: -2px;
+    line-height: 20px;
+    min-width: 21px;
+}
+
+
+.ic{
+    background-position: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    width: 12px;
+    font-size: 16px
+}
+.ul li a.active .notification{
+    background: url(/public/icons/leftMenu/notification_active.svg) no-repeat;
+}
+.notification{
+    background: url(/public/icons/leftMenu/notification.svg) no-repeat;
+    height: 12px;
+}
+.ul li a.active .bookmark{
+    background: url(/public/icons/leftMenu/bookmark_active.svg) no-repeat;
+}
+.bookmark{
+    background: url(/public/icons/leftMenu/bookmark.svg) no-repeat;
+    height: 12px;
+}
+
+.star{
+    background: url(/public/icons/leftMenu/star.svg) no-repeat;
+    height: 12px;
+}
+
+.project{
+    background: url(/public/icons/leftMenu/project.svg) no-repeat;
+    height: 12px;
+}
+
+.ul li a.active .setting{
+    background: url(/public/icons/leftMenu/setting_active.svg) no-repeat;
+}
+.setting{
+    background: url(/public/icons/leftMenu/setting.svg) no-repeat;
+    height: 12px;
+}

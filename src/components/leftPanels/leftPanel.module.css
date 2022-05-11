@@ -1,0 +1,19 @@
+.wrap{
+    overflow: auto;
+    border-right: 1px solid #d3d8e0;
+    width: 320px;
+    display: table-cell;
+    position: relative;
+}
+
+.menu{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    padding-bottom: 80px;
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+}
