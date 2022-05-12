@@ -14,9 +14,13 @@ const LefPanel = () => {
     const defaultUrl = `/sandwich/${channel}`
 
     const [innerHeight, setInnerHeight] = useState(window.innerHeight)
-    const handleResize = () => {
+    const [innerWidth, setInnerWidth] = useState(320)
+    const handleResize = (node, { size }) => {
         setInnerHeight(window.innerHeight)
+        setInnerWidth(size.width)
     }
+
+    // TODO 반응형 고려하여 size 조절하기
     useEffect(() => {
         window.addEventListener('resize', handleResize)
         return () => {
@@ -25,7 +29,7 @@ const LefPanel = () => {
     })
 
     return (
-        <ResizableBox width={320} height={innerHeight} className={styles.wrap} axis="x"
+        <ResizableBox width={innerWidth} height={innerHeight} className={styles.wrap} axis="x" onResize={handleResize}
                       minConstraints={[180, innerHeight]} maxConstraints={[600, innerHeight]}>
             <div className={styles.menu}>
                 <LeftNavi defaultUrl={defaultUrl}/>
