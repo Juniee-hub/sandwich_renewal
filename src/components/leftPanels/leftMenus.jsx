@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import styles            from './leftMenus.module.css'
 import { Link, NavLink } from 'react-router-dom'
 import { Badge }         from 'antd'
 
 const LeftMenus = ({ defaultUrl }) => {
+
+    useEffect(() => {
+        // return () => {
+        //     effect
+        // }
+    }, [])
+
 
     return (
         <ul className={styles.ul}>
@@ -19,7 +26,7 @@ const LeftMenus = ({ defaultUrl }) => {
                 </NavLink>
             </li>
             <li>
-                <NavLink to={defaultUrl} className={({ isActive }) => (isActive ? styles.active : '')}>
+                <NavLink to={`${defaultUrl}/bookmark`} className={({ isActive }) => (isActive ? styles.active : '')}>
                     <span>
                         <span className={`${styles.bookmark} ${styles.ic}`}/>
                         <Badge dot offset={[10, 9]} count={0}>
@@ -49,7 +56,7 @@ const LeftMenus = ({ defaultUrl }) => {
                         <span className={`${styles.addProject} ${styles.ic}`}/>
                     </div>
 
-                    <Link to={''}>
+                    <Link to={`${defaultUrl}/project/184`}>
                         <div className={styles.projectItem}>
                             <span>
                                 PremiumAX
@@ -58,7 +65,7 @@ const LeftMenus = ({ defaultUrl }) => {
                         </div>
                     </Link>
 
-                    <Link to={''}>
+                    <Link to={`${defaultUrl}/project/176`}>
                         <div className={styles.projectItem}>
                             <span>
                                 PremiumPX
@@ -66,7 +73,7 @@ const LeftMenus = ({ defaultUrl }) => {
                         </div>
                     </Link>
 
-                    <Link to={''}>
+                    <Link to={`${defaultUrl}/project/175`}>
                         <div className={styles.projectItem}>
                             <span>
                                 PremiumDX
@@ -78,7 +85,7 @@ const LeftMenus = ({ defaultUrl }) => {
                 </div>
             </li>
             <li>
-                <NavLink to={defaultUrl} className={({ isActive }) => (isActive ? styles.active : '')}>
+                <NavLink to={`${defaultUrl}/setting`} className={({ isActive }) => (isActive ? styles.active : '')}>
                     <span>
                         <span className={`${styles.setting} ${styles.ic}`}/>
                         샌드위치 설정

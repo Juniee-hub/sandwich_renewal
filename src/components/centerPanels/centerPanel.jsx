@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import styles from './centerPanel.module.css'
-const CenterPanel = () => {
+import Title  from './title'
+import Feeds  from './feeds'
+import Alarms from './alarms'
+const CenterPanel = ({pageData}) => {
+
+    useEffect(() => {
+
+        // return () => {
+        //
+        // }
+
+    }, [])
+
+
     return (
-        <div>
-            
-        </div>
+        <>
+            <Title pageData={pageData}/>
+            <Alarms />
+            <Feeds />
+        </>
     )
 }
 

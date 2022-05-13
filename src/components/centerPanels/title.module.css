@@ -1,0 +1,34 @@
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #d3d8e0;
+    padding:0 20px;
+}
+
+.titleWrap{
+    display: flex;
+    align-items: center;
+    color: #36353a;
+    font-family: 'notoB','serif';
+    font-size: 18px;
+    word-break: keep-all;
+}
+.titleWrap > span:last-child{
+    margin-left: 5px;
+}
+
+.ic_star{
+    background: url(/public/icons/star.svg) no-repeat 50%;
+    margin-bottom: 1px;
+}
+
+.ic_star,
+.ic_star.active{
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+}
