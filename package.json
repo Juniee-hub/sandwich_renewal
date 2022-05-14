@@ -12,6 +12,7 @@
     "fontsource-noto-sans-kr": "^4.0.0",
     "immutable": "^4.0.0",
     "nanoid": "^3.3.4",
+    "query-string": "^7.1.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-kakao-login": "^2.1.0",
