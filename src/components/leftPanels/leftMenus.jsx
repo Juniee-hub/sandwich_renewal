@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { memo, useEffect } from 'react'
 
 import styles            from './leftMenus.module.css'
 import { Link, NavLink } from 'react-router-dom'
 import { Badge }         from 'antd'
 
-const LeftMenus = ({ defaultUrl }) => {
+const LeftMenus = memo(({ defaultUrl }) => {
 
     useEffect(() => {
         // return () => {
@@ -94,6 +94,6 @@ const LeftMenus = ({ defaultUrl }) => {
             </li>
         </ul>
     )
-}
+})
 
 export default LeftMenus

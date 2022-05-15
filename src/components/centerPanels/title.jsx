@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 
 import styles          from './title.module.css'
 import Profile         from '../common/profile'
 
-const Title = ({ pageData }) => {
+const Title = memo(({ pageData }) => {
     // ToDo 프로젝트별 구분값과 확인하여 TRUE FALSE 변경해야함
     const [isBookmark, setIsBookmark] = useState(false)
 
@@ -27,6 +27,6 @@ const Title = ({ pageData }) => {
             <Profile/>
         </div>
     )
-}
+})
 
 export default Title
