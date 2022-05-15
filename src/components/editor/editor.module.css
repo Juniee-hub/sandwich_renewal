@@ -1,0 +1,14 @@
+.inputBoxEditor{
+    align-items: flex-end;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 1px #d3d8e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 8px 14px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}

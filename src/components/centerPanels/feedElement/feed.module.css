@@ -1,0 +1,210 @@
+.dateMain{
+    padding: 20px 0 5px;
+    width: 100%;
+}
+.dateMain > span{
+    font-family: 'notoR', 'serif';
+    font-size: 12px;
+    color: #ababac;
+}
+
+.msgBox{
+    align-items: flex-end;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 3px;
+    min-height: 80px;
+    padding: 10px;
+    width: 100%;
+}
+
+.msgBox > div:nth-child(2){
+    display: flex;
+    width: 100%;
+}
+
+.labelWrap{
+    display: flex;
+    height: 20px;
+    justify-content: flex-end;
+    margin-bottom: -20px;
+    right: 0;
+    z-index: 9;
+}
+
+.labelBox{
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'notoR', 'serif';
+    font-size: 12px;
+    height: 20px;
+    justify-content: space-between;
+    line-height: 20px;
+    margin-left: 1px;
+    margin-right: 3px;
+    min-width: 58px;
+    padding: 0 6px;
+    text-align: center;
+}
+
+.selectIndicator{
+    height: 100%;
+    line-height: 16px;
+    margin-left: 4px;
+}
+
+.active .selectIndicator{
+    transform: rotate(180deg);
+}
+
+.thumbnailWrap{
+    height: 100%;
+    width: 42px;
+}
+.thumbnailWrap > img{
+    border: 0;
+    border-radius: 36px;
+    height: 36px;
+    margin: auto;
+    object-fit: cover;
+    overflow: hidden;
+    vertical-align: top;
+    width: 36px;
+}
+
+.infoWrap{
+    color: #36353a;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 10px;
+    width: calc(100% - 10px);
+}
+
+.nickNameWrap{
+    align-items: flex-start;
+    display: flex;
+    height: 22px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nickName{
+    font-family: 'notoB', 'serif';
+    font-size: 14px;
+}
+
+.date{
+    color: #ababac;
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.msgGroup{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+}
+.msgGroup .msg  >div{
+    overflow-wrap: anywhere;
+    width: 100%;
+}
+.msgGroup .msg{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+.msgGroup .msg img{
+    border: 1px solid #f6f6f9;
+    border-radius: 8px;
+    height: auto;
+    margin-top: 0;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.ql_editor{
+    word-wrap: break-word;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 1.42;
+    outline: none;
+    overflow-y: auto;
+    padding: 12px 15px;
+    tab-size: 4;
+    -moz-tab-size: 4;
+    text-align: left;
+    white-space: pre-wrap;
+}
+.msg.ql_editor{
+    padding: 5px 0 0!important;
+}
+
+.msgAppWrap{
+    margin-top: 10px;
+    width: 100%;
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.msgApp{
+    align-items: center;
+    color: #36353a;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.msgApp .storageWrap {
+    box-shadow: 3px 5px 12px 0 hsl(0deg 0% 67% / 54%);
+}
+.msgApp img{
+    margin: 2px;
+    max-height: 40px;
+    max-width: 60px;
+}
+
+.comment{
+    color: #ababac;
+    float: right;
+    font-size: 11px;
+    margin-right: 20px;
+    text-align: right;
+    width: 50px;
+}
+
+.commentCnt{
+
+}
+
+.bookmark{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -23px;
+    width: 20px;
+}
+.ic_bookmark{
+    background: url(/public/icons/bookmark.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    width: 10px;
+
+    background-position: 50%!important;
+    background-repeat: no-repeat!important;
+    height: 20px;
+    margin-bottom: -9px;
+    margin-right: -5px;
+    width: 20px;
+}

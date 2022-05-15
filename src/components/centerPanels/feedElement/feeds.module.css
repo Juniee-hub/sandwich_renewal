@@ -1,0 +1,14 @@
+.wrap{
+    background-color: #f6f6f9;
+    height: 100%;
+    vertical-align: top;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding: 16px 20px 0;
+}
+
+.feeds{
+
+}

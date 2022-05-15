@@ -41,12 +41,20 @@ const Sandwich = () => {
         }
     }, [])
 
+    const stateOptions = [
+        { value: '0', label: '선택', color: '#D3D8E0', bgColor: '#ffffff', boxShadow: '0 0 0px 1px #D3D8E0 inset' },
+        { value: '1', label: '요청', color: '#3C82FF', bgColor: '#ffffff', boxShadow: '0 0 0px 1px #3C82FF inset' },
+        { value: '2', label: '진행', color: '#ffffff', bgColor: '#3C82FF', boxShadow: '0 0 0px 1px #3C82FF inset' },
+        { value: '3', label: '완료', color: '#ffffff', bgColor: '#ABABAC', boxShadow: '0 0 0px 1px #ABABAC inset' },
+        { value: '4', label: '보류', color: '#ABABAC', bgColor: '#ffffff', boxShadow: '0 0 0px 1px #ABABAC inset' },
+        { value: '5', label: '미결', color: '#ABABAC', bgColor: '#ffffff', boxShadow: '0 0 0px 1px #ABABAC inset' }
+    ];
 
     return (
         <div className={styles.wrap}>
             <LeftPanel pageData={pageData}/>
-            <CenterPanel pageData={pageData}/>
-            <RightPanel pageData={pageData}/>
+            <CenterPanel pageData={pageData} stateOptions={stateOptions}/>
+            <RightPanel pageData={pageData} stateOptions={stateOptions}/>
         </div>
     )
 }
